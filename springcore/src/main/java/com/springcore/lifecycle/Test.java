@@ -10,11 +10,19 @@ public class Test {
 		
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/lifecycle/lifecycle_config.xml");
 		Samosa s1 =(Samosa) context.getBean("S1");
-		Pepsi P1 = (Pepsi) context.getBean("p1");
 		System.out.println(s1);
-		System.out.println("Pepsi price is  :"+ P1);
+		
+		System.out.println("+++++++++++++++++++++++++++");
+		
+		Pepsi p1 = (Pepsi) context.getBean("p1");
+		System.out.println(p1);
+		
 		
 		context.registerShutdownHook();
+		
+		
+		Kachauri k1 =(Kachauri) context.getBean("k1");
+		System.out.println(k1);
 
 	}
 
