@@ -9,7 +9,7 @@ public class Test {
 		// TODO Auto-generated method stub
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/ci/ci_config.xml");
 		Person p = (Person)context.getBean("person");
-		System.out.println(p);
+		System.out.println("person " + p);
 		
 		Adition add =(Adition) context.getBean("sum");
 		System.out.println(add);
