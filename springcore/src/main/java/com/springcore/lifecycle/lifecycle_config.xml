@@ -13,7 +13,7 @@
 		<property name="price" value="10" />
 	</bean>
 	
-	<bean class="com.springcore.lifecycle.Pepsi" name="p1" init-method="" destroy-method="">
+	<bean class="com.springcore.lifecycle.Pepsi" name="p1" init-method="init" destroy-method="destroy">
 		<property name="price" value="20" />
 	</bean>
 </beans>

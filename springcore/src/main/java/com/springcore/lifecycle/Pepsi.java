@@ -21,5 +21,13 @@ public class Pepsi {
 		return "Pepsi [price=" + price + "]";
 	}
 	
+	public void init() {
+		System.out.println("Init method in ...");
+	}
+	
+	public void destroy() {
+		System.out.println("Destroye methd ----");
+	}
+	
 
 }
